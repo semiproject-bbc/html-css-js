@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>orderPayment</title>
+    <link rel="stylesheet" a href="style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const ontoPaymentButton = document.querySelector(".ontoPayment");
+    ontoPaymentButton.addEventListener("click", function(event) {
+        const agreeToAll = document.querySelector(".agreeToAll");
+        const tNcPaymentMethods = document.querySelector(".tNcPaymentMethods");
+        const tNc3rdParty = document.querySelector(".tNc3rdParty");
+        const tNcResponsible = document.querySelector(".tNcResponsible");
+        const tNchoowon = document.querySelector(".tNchoowon");
+
+        // Check if any of the checkboxes are not checked
+        if (!agreeToAll.checked || !tNcPaymentMethods.checked || !tNc3rdParty.checked || !tNcResponsible.checked || !tNchoowon.checked) {
+            alert("약관에 동의해주세요.");
+            event.preventDefault(); // Prevent form submission
+        }
+    });
+});
+    </script>
+
+</head>
+<body>
+
+    <div class="orderPayment-header">
+        <div class="orderPayment-header">주문 / 결제</div>
+        <br>
+        <div class="productInfo">주문제품 정보</div>
+        <div class="sideProcess">
+            <b>주문 / 결제</b>
+            <span class="span"> &gt; 완료</span>
+        </div>
+    </div>
+
+    <div class="ProductInformation">
+        <img class="productImage" loading="lazy" alt="강아지 제품에 대한 정보 소개" src="dog.jpeg">
+        <div class="productInfo-container">
+            <div class="productName-container">
+                <div class="projectName">프로젝트명</div>
+                <div class="projectNameInfo">반려동물을 위한 공간 ...</div>
+            </div>
+            </br></br>
+            <div class="rewardName-container">"
+                <div class="rewardName">리워드명</div>
+                <div class="rewardNameInfo">펫슨 홈 본체 + 패브릭 매트(65 * 50cm)</div>
+            </div>
+            </br></br>
+            <div class="deliverFee-container">
+                <div class="deliverFee">배송비</div>
+                <div class="deliverFeeAmount">2500원</div>
+            </div>
+            </br></br>
+            <div class="coupon-container">
+                <div class="coupon">쿠폰 할인</div>
+                <div class="couponDiscount">할인 금액</div>
+            </div>
+            </br></br>
+            <div class="orderFee-container">
+                <div class="orderFee">주문 금액</div>
+                <div class="orderAmount">120,000원</div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="fundingSupporterAndRewardDestination">
+        <div class="fundingSupporter-container">
+            <div class="fundingSupporter-title">펀딩 서포터</div>
+            <div class="fundingSupporter-container2">
+                <div class="supporter-name">이름</div>
+                    <br>
+                <div class="supporter-name-inputted-value">이름</div>
+
+                <div class="supporter-email">이메일</div>
+                    <br>
+                <div class="supporter-email-inputted-value">이메일</div>
+
+                <div class="supporter-phone-number">휴대폰 번호</div>
+                <div class="support-phone-number-inputted-value">010-XXXX-XXXX</div>
+                <br><br><br>
+                <div class="tNcPayment-container">
+                    <input type="checkbox" class="checkbox"><div class="conditions">(필수) 펀딩 진행에 대한 새소식 및 결제 관련 안내를 받습니다.</div>
+                </div>
+            </div>
+        </div>
+
+    
+        <div class="rewardDestination-container">
+            <div class="rewardDestination-title">리워드 배송지</div>
+            <div class="rewardDestination-container2">
+                <div class="rewardGetPersonName">수취인명</div>
+                <input class="rewardGetPersonNameInfo" placeholder="이름" type="text">
+
+                <div class="rewardGetPersonAddress">주소</div>
+                <input class="rewardGetPersonAddressInfo" placeholder="주소" type="text">
+
+                <div class="rewardToNotify">배송 시 요청 사항</div>
+                <input class="rewardToNotifyText" placeholder="ex)부재시 경비실에 보관해주세요." type="text">
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="payment">
+        <div class="paymentMethod-container">
+            <div class="paymentMethod">결제 수단</div>
+        </br>
+        <img class="kakaopay" loading="lazy" alt="kakaopay" src="kakaopayIcon.png">
+        </div>
+
+        <div class="finalPayment-container">
+            <div class="finalPayment">최종 결제 금액</div>
+            <div class="finalPaymentAmount">1xx,xxx원</div>
+        </div>
+    </div>
+    
+
+    <br><br><br><br>
+
+    <div class="agreeTotNc-allcontainer">
+        <div class="agreeToTermsAndConditions">약관 동의</div>
+        <div class="agreeToTermsAndConditions-container">
+            <div><input type="checkbox" class=agreeToAll>전체 동의</div>
+            <hr>
+            <div><input type="checkbox" class="tNcPaymentMethods">구매 조건, 결제 진행 . 및결제 대행 서비스 동의 (필수)</div>
+            <div class="see">보기</div>
+            <hr>
+            <div><input type="checkbox" class="tNc3rdParty">개인정보 제3자 제공 동의</div>
+            <div class="see">보기</div>
+            <hr>
+            <div><input type="checkbox" class="tNcResponsible">책임 규정에 대한 동의</div>
+            <div class="see">보기</div>
+            <hr>
+            <div><input type="checkbox" class="tNchoowon">후원 유의 사항 확인</div>
+            <div class="see">보기</div>
+            <div class="confirmation"></div>
+        </div>
+    </div>
+    <br>
+
+    <button type="submit" class="ontoPayment">결제하기</button>
+</body>
+</html>

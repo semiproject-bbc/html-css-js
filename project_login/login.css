@@ -1,0 +1,70 @@
+
+
+.SignInForm_idField {
+    align-self: stretch;
+    border-radius: 5px;
+    justify-content: center;
+    display: flex;
+}
+
+.idField {
+    height: 58px;
+    width: 354px;
+    align-self: stretch;
+    border: 1px solid var(--color-lightgray);
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.SignInForm_passwordField {
+    align-self: stretch;
+    border-radius: 5px;
+    justify-content: center;
+    display: flex;
+}
+
+.passwordField {
+    height: 58px;
+    width: 354px;
+    align-self: stretch;
+    border: 1px solid var(--color-lightgray);
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.SignInForm_loginAction {
+    display: flex;
+    
+}
+
+.SignInForm_forgotId a,
+.SignInForm_forgotPassword a,
+.SignInForm_regist a {
+    color: #000000; 
+    text-decoration: none;
+}
+
+.loginSubmitButton {
+    height: 58px;
+    width: 354px;
+    background-color: var(--color-sandybrown);
+    border: 1px solid var(--color-sandybrown);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.loginSubmitButton:hover {
+    background-color: var(--color-chocolate);
+    border: 1px solid var(--color-chocolate);
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+
+.loginButtonText {
+    position: relative;
+    color: var(--color-white);
+    text-align: center;
+}
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로젝트 등록_1.기본 정보</title>
+    <link rel="stylesheet" href="프로젝트등록_1.기본 정보.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,400;0,600;0,700;1,400&display=swap"/>
+</head>
+<body>
+    <header>
+        <div class="personal-info">
+            <a class="heart personal-info-item" href="http://www.naver.com">
+                <img class="heart-icon" src="/image/heart.png">
+            </a>
+            <a class="bell personal-info-item" href="">
+                <img class="bell-icon" src="/image/bell-ring.png">
+            </a>
+            <button class="mypage personal-info-item" href="http://www.naver.com">마이페이지</button>
+            <button id="logout" class="logout personal-info-item" type="button">로그아웃</button>         
+            <button id="newRegist" class="project-regist personal-info-item">프로젝트 등록</button>
+        </div>
+        <div class="companimal" onclick="location.href=''">Companimal</div>
+        <div class="nav-bar">
+            <div class="menu-bar">
+                <a class="funding+" href="">펀딩+</a>
+                <a class="community" href="">커뮤니티</a>
+                <a class="story" href="">스토리</a>
+            </div>
+            <div class="keyword-search">
+                <input class="search-box" placeholder="키워드 검색" type="text">
+                <button type="button">
+                    <img class="keyword-search-icon" src="/image/search.png">
+                </button>
+            </div>
+        </div>
+        <img class="line" src="/image/line.png">
+    </header>
+    
+    <section>
+    
+        <div class="nav-bar-height">
+            <button class="nav-tab">프로젝트 관리</button><br>
+            <button class="nav-choose">1.기본 정보</button><br>
+            <button class="nav-list">2.프로젝트 정보</button><br>
+            <button class="nav-list">3.스토리 작성</button><br>
+            <button class="nav-list">4.리워드 설계</button><br>
+            <button class="nav-list">5.정책</button><br>
+            <button class="nav-list">6.크리에이터 정보</button><br>
+            <button class="nav-tab">정산 관리</button><br>
+            <button class="nav-list">7.정산 정보
+        </div>
+        <div class="main">
+            <p class="title">프로젝트 등록</p>
+            <p class="sub-title">기본 정보</p>
+            <form action="#">
+                <select name="카테고리 선택" id="select-box">
+                    <option value="fitness">피트니스</option>
+                    <option value="food">푸드</option>
+                    <option value="living">생활용품</option>
+                    <option value="etc">기타</option>
+                </select>
+            </form><br>
+            <form action="#">
+                <select name="프로젝트 서브 카테고리 선택" id="select-box">
+                    <option value="mammal">포유류</option>
+                    <option value="reptile">파충류</option>
+                    <option value="fish">어류</option>
+                    <option value="bird">조류</option>
+                    <option value="amphibian">양서류</option>
+                </select>
+            </form><br>
+            <input type="text" class="input-title" placeholder="프로젝트 제목 (최대 40자)"><br><br>
+            <textarea type="text" class="input-explanation" placeholder="프로젝트 소개 (최대 300자)"></textarea><br><br>
+            <div class="tip">
+                TIP. 대표 이미지 등록 가이드<br>
+                * 10MB 이하의 JPG 파일<br>
+                * 해상도 1200x675 픽셀 이상<br>
+            </div><br><br><br>
+            <input type="file" placeholder="대표 이미지 등록"><br><br>
+            <input type="file" placeholder="파일 추가"></input><br><br>
+            <button type="button" class="next">다음</button><br>
+        </div>
+    </section>
+<script src="/프로젝트등록_1.기본 정보.js"></script>
+</body>
+</html>
